@@ -1,19 +1,19 @@
-**🎓 EduAdvisor: University Admission & GPA Chat Assistant
+ EduAdvisor: University Admission & GPA Chat Assistant
 Fine-Tuning TinyLlama with LoRA for the Education Domain**
 
 EduAdvisor is a domain-specific AI chatbot designed to help high school graduates navigate undergraduate admissions. It provides clear guidance on GPA requirements, admission criteria, and university choices.
 
-📌 Project Overview
+ Project Overview
 
 EduAdvisor answers common admission questions such as:
 
-🎯 GPA requirements — What GPA is needed for a program?
+ GPA requirements — What GPA is needed for a program?
 
-📄 Admission requirements — Required documents and criteria
+ Admission requirements — Required documents and criteria
 
-🏫 Public vs. private universities — Costs, class sizes, financial aid, and more
+ Public vs. private universities — Costs, class sizes, financial aid, and more
 
-🧠 Model Details
+ Model Details
 
 Base Model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
 
@@ -25,7 +25,7 @@ Dataset: Custom Education Q&A Dataset (454 samples)
 
 Interface: Gradio chatbot UI
 
-🚀 Features
+ Features
 
 1.Domain-specific admission guidance
 2.Improved GPA explanation accuracy
@@ -41,44 +41,44 @@ EduAdvisor-Chatbot/
 ├── app.py                                # Gradio deployment script (optional)
 └── README.md                             # Project documentation
 
-⚙️ Workflow Pipeline
-1️⃣ Environment Setup
+ Workflow Pipeline
+ Environment Setup
 
 Install dependencies
 
 GPU check and configuration
 
-2️⃣ Dataset Loading & Exploration
+ Dataset Loading & Exploration
 
 Load custom education Q&A dataset
 
 Explore categories and distribution
 
-3️⃣ Data Preprocessing
+ Data Preprocessing
 
 Clean and format Q&A pairs
 
 Convert into instruction format for training
 
-4️⃣ Model & Tokenizer Loading
+ Model & Tokenizer Loading
 
 Load TinyLlama chat model
 
 Prepare tokenizer
 
-5️⃣ LoRA Configuration
+ LoRA Configuration
 
 LoRA enables efficient fine-tuning by updating a small number of parameters.
 
-🧪 Hyperparameter Experiments
+ Hyperparameter Experiments
 
 | Exp | LR   | Batch | Grad Accum | Effective Batch | Epochs | LoRA r | LoRA α | Val Loss  | Notes                |
 | --- | ---- | ----- | ---------- | --------------- | ------ | ------ | ------ | --------- | -------------------- |
 | 1   | 2e-4 | 2     | 4          | 8               | 1      | 8      | 16     | ~1.85     | Baseline             |
 | 2   | 1e-4 | 2     | 8          | 16              | 2      | 16     | 32     | ~1.62     | Improved convergence |
-| ⭐ 3 | 2e-4 | 4     | 4          | 16              | 3      | 16     | 32     | **~1.47** | **Best performance** |
+|  3 | 2e-4 | 4     | 4          | 16              | 3      | 16     | 32     | **~1.47** | **Best performance** |
 
-📊 Model Evaluation
+ Model Evaluation
 
 The model was evaluated using:
 
@@ -88,7 +88,7 @@ ROUGE Score → evaluates content overlap
 
 Perplexity → measures language fluency
 
-🔍 Results Summary
+ Results Summary
 
 Base Model
 
@@ -110,7 +110,7 @@ Domain-specific terminology
 
 Fine-tuning significantly improved contextual understanding and response quality.
 
-🤖 Chatbot Interface (Gradio)
+ Chatbot Interface (Gradio)
 
 The chatbot is deployed with Gradio, enabling:
 
@@ -127,3 +127,5 @@ Chat history support
 Users can ask admission-related questions and receive immediate guidance.
 
 Author: Jean Jacques JABO
+Youtubelink: https://youtu.be/szDaoUIWHr8
+Notebooklink: JABO Jean Jacques_EduAdvisor_Chatbot_FineTuning_.ipynb
