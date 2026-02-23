@@ -28,11 +28,17 @@ Interface: Gradio chatbot UI
  Features
 
 1.Domain-specific admission guidance
+
 2.Improved GPA explanation accuracy
+
 3.Contextually relevant responses
+
 4.Lightweight fine-tuning (LoRA)
+
 5.Interactive chat interface
+
 6.Base vs fine-tuned model comparison
+
 EduAdvisor-Chatbot/
 │
 ├── EduAdvisor_Chatbot_FineTuning.ipynb   # Main notebook
