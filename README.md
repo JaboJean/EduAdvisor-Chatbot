@@ -295,6 +295,7 @@ Fix: gradient_checkpointing_kwargs={'use_reentrant': False}
 ---
 Author: JABO Jean Jacques
 Youtubelink: https://youtu.be/szDaoUIWHr8
-Notebooklink: JABO Jean Jacques_EduAdvisor_Chatbot_FineTuning_.ipynb
+
+Notebooklink: [JABO Jean Jacques_EduAdvisor_Chatbot_FineTuning_.ipynb](https://colab.research.google.com/drive/1N1Nsu4DPLrwjpzZCAyKMCcvj_s9pfX-a)
 
 
